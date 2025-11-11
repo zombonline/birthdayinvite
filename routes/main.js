@@ -68,7 +68,8 @@ var data = {
         { id: 8086, name: "Maks" },
         { id: 6210, name: "Wai" },
         { id: 2124, name: "Willow" },
-        { id: 4356, name: "Serena" }
+        { id: 4356, name: "Serena" },
+        { id: 4444, name: "Gloria" }
     ]
 };
 
