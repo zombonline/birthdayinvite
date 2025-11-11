@@ -69,7 +69,7 @@ var data = {
         { id: 6210, name: "Wai" },
         { id: 2124, name: "Willow" },
         { id: 4356, name: "Serena" },
-        { id: 4444, name: "Gloria" }
+        { id: 8686, name: "Gloria" }
     ]
 };
 
