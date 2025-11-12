@@ -44,10 +44,13 @@
         <p>Hey <strong><%= name %></strong>,</p>
         <p>You're invited to my birthday party!</p> 
         <img src="images/crash.gif" alt="">
-        <p><strong>Date:</strong> Friday, 28th November 2025</p>
-        <p><strong>Time:</strong> 14:00 </p>
-        <p><strong>Location:</strong> Flat 301 Windward Court, 5 Gallions Road, London, E16 2FD</p>
-        <p>Bring your favourite drink/snacks!</p>
+        <!-- do not render this info is name is no-one -->
+        <% if (name !== "no-one") { %>
+            <p><strong>Date:</strong> Friday, 28th November 2025</p>
+            <p><strong>Time:</strong> 14:00 </p>
+            <p><strong>Location:</strong> Flat 301 Windward Court, 5 Gallions Road, London, E16 2FD</p>
+            <p>Bring your favourite drink/snacks!</p>
+        <% } %>
         <form action="/rsvp" method="POST">
             <input type="hidden" name="guest" value="<%= name %>">
             <button type="submit">RSVP</button>
